@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   Design System — Indian Wedding (Dark · Gold · Cream)
+   All colors in HSL. Use semantic tokens only.
+   ========================================================= */
+
+@layer base {
+  :root {
+    /* Base surfaces */
+    --background: 0 0% 6%;            /* dark #0f0f0f */
+    --foreground: 40 55% 95%;         /* cream */
+
+    --card: 0 0% 10%;                 /* #1a1a1a */
+    --card-foreground: 40 55% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 55% 95%;
+
+    /* Gold accents */
+    --primary: 38 55% 48%;            /* antique gold */
+    --primary-foreground: 0 0% 6%;
+    --primary-glow: 42 72% 62%;       /* shimmer gold */
+
+    --secondary: 40 55% 90%;          /* cream */
+    --secondary-foreground: 0 0% 6%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 40 25% 70%;
+
+    --accent: 20 55% 45%;             /* henna / sindoor */
+    --accent-foreground: 0 0% 6%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 55% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 38 55% 48%;
+
+    --radius: 0.25rem;
+
+    /* Design tokens */
+    --gradient-gold: linear-gradient(135deg, hsl(42 72% 62%), hsl(38 55% 48%) 50%, hsl(32 65% 38%));
+    --gradient-soft: linear-gradient(180deg, hsl(0 0% 6%), hsl(0 0% 10%));
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(42 72% 62% / 0.15), transparent 60%);
+
+    --shadow-gold: 0 20px 60px -20px hsl(38 55% 48% / 0.35);
+    --shadow-soft: 0 10px 40px -10px hsl(30 25% 16% / 0.12);
+    --shadow-inset: inset 0 0 0 1px hsl(38 55% 48% / 0.2);
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Sidebar (unused, keep defaults) */
+    --sidebar-background: 40 46% 97%;
+    --sidebar-foreground: 30 25% 16%;
+    --sidebar-primary: 38 55% 48%;
+    --sidebar-primary-foreground: 40 55% 98%;
+    --sidebar-accent: 36 38% 90%;
+    --sidebar-accent-foreground: 30 25% 16%;
+    --sidebar-border: 38 30% 86%;
+    --sidebar-ring: 38 55% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background-image: var(--gradient-radial);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+  .font-script {
+    font-family: "Great Vibes", cursive;
+  }
+  .font-small-caps {
+    font-family: "Cinzel", serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+  .font-body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+  }
+
+  .text-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .divider-ornament {
+    @apply flex items-center justify-center gap-4 text-primary;
+  }
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: "";
+    height: 1px;
+    width: 4rem;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.6), transparent);
+  }
+
+  .gold-border {
+    position: relative;
+  }
+  .gold-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: var(--gradient-gold);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: translateY(24px);
+    transition: opacity 0.9s var(--transition-smooth), transform 0.9s var(--transition-smooth);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
