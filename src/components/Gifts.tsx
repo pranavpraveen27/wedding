@@ -3,7 +3,7 @@ import { Copy, Check } from "lucide-react";
 import Ornament from "./Ornament";
 import qr from "@/assets/upi-qr.jpg";
 
-const UPI_ID = "aarav.priya@okhdfcbank";
+const UPI_ID = "9596930117@mbkns";
 
 const Gifts = () => {
   const [copied, setCopied] = useState(false);

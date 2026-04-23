@@ -19,17 +19,17 @@ const Contact = () => {
                 Host
               </h3>
               <p className="font-body text-lg text-muted-foreground mb-6">
-                Shri Jitendra Pandit
+                Shri Birendra Pandit
               </p>
 
               <div className="space-y-3">
                 <div className="flex items-center justify-center gap-3">
                   <Phone size={18} className="text-primary" />
-                  <span className="font-body text-foreground">9572337065</span>
+                  <span className="font-body text-foreground">9596930117</span>
                 </div>
                 <div className="flex items-center justify-center gap-3">
                   <Phone size={18} className="text-primary" />
-                  <span className="font-body text-foreground">7250936892</span>
+                  <span className="font-body text-foreground">9931802545</span>
                 </div>
               </div>
             </div>

@@ -3,30 +3,45 @@ import Ornament from "./Ornament";
 
 const familyMembers = [
   {
-    name: "Mohan Pandit",
+    name: "Hari Kishore Pandit",
     role: "Indian Army",
-    icon: "🎖️",
+    icon: "🪖",
   },
   {
     name: "Surendra Pandit",
     role: "Indian Army",
-    icon: "🎖️",
+    icon: "🪖",
   },
   {
-    name: "Shyam Pandit",
+    name: "Dipu Kumar",
     role: "Indian Navy",
     icon: "⚓",
   },
   {
-    name: "Ritesh Kumar",
-    role: "Indian Navy",
+    name: "Nitesh Kumar",
+    role: "B.Tech",
     icon: "⚓",
   },
   {
-    name: "Bihar Police",
-    role: "Family Member",
+    name: "Prince Kumar",
+    role: "Bihar Police",
     icon: "👮",
   },
+  {
+    name: "Banti Kumar",
+    role: "UPSC",
+    icon: "👨🏻‍🎓",
+  },
+  {
+    name: "Uday Kumar",
+    role: "Mobile Engineer",
+    icon: "📱",
+  },
+  {
+    name: "Surendra Pandit",
+    role : "Dentist",
+    icon : "🦷"
+  }
 ];
 
 const Family = () => {

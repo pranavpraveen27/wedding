@@ -58,15 +58,15 @@ const Hero = () => {
           <div className="font-body text-sm text-muted-foreground max-w-md mx-auto md:mx-0 leading-relaxed mb-6">
             <div className="mb-4">
               <p className="font-semibold text-foreground mb-1">Dr. Abhay Kumar Pandit</p>
-              <p>S/o Shri Birendra Pandit</p>
-              <p>Village: Gaundra Pipra, Bind Tola</p>
-              <p>P.S: Narkatiaganj, District: West Champaran (Bihar)</p>
+              <p>S/o Pinki devi & Birendra Pandit</p>
+              <p>Village: Sasna Kishunpur</p>
+              <p>P.S: Janta bazar, District: Saran(Bihar)</p>
             </div>
             <div className="mb-4">
               <p className="font-semibold text-foreground mb-1">Rimpa Kumari</p>
-              <p>D/o Rajkumari Devi & Sudama Sah</p>
-              <p>Village: Matar, Kanchanpur</p>
-              <p>P.S: Sikta, District: West Champaran (Bihar)</p>
+              <p>D/o Rajkumari Devi & Ramlal pandit</p>
+              <p>Village: Khedhwa, Basantpur</p>
+              <p>P.S: Basantpur, District: Siwan (Bihar)</p>
             </div>
           </div>
 

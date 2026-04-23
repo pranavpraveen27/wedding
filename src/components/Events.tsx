@@ -8,8 +8,8 @@ const events = [
     date: "29 April, 2026",
     day: "Wednesday",
     time: "10:00 AM onwards",
-    venue: "Residence Lawn, Jaipur",
-    mapUrl: "https://maps.google.com/?q=Jaipur",
+    venue: "Vill: Sasna kishunpur",
+    mapUrl: "https://maps.google.com/?q=sasna kishunpur",
     icon: "🌼",
   },
   {
@@ -18,8 +18,8 @@ const events = [
     date: "28 April, 2026",
     day: "Tuesday",
     time: "12:00 PM onwards",
-    venue: "Family Residence, Jaipur",
-    mapUrl: "https://maps.google.com/?q=Jaipur",
+    venue: "Family Residence Vill: Sasna kishunpur",
+    mapUrl: "https://maps.google.com/?q=sasna kishunpur",
     icon: "🌿",
   },
   {
@@ -28,8 +28,8 @@ const events = [
     date: "30 April, 2026",
     day: "Thursday",
     time: "5:00 PM onwards",
-    venue: "Mandap Garden, Jaipur",
-    mapUrl: "https://maps.google.com/?q=Jaipur",
+    venue: "Khedhwa,Basantpur",
+    mapUrl: "https://maps.google.com/?q=khedhwa",
     icon: "🔥",
   },
 ];
